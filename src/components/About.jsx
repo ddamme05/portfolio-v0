@@ -37,12 +37,13 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+        I'm a student and aspiring software engineer with a focus on backend development. While backend is a 
+        broad field with many specializations, I'm particularly fascinated by distributed and cloud computing. 
+        I believe mastering these areas will provide a strong foundation for my career.
+        Learning is my passion, even when the subject isn't inherently exciting. 
+        Although I discovered my love for computer science early on, I've only recently begun my journey in the field. 
+        I enjoy exploring various aspects of software development beyond just backend, including cybersecurity and frontend. 
+        I believe this holistic approach will make me a more well-rounded and effective software engineer, both now and in the future.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

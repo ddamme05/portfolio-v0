@@ -120,7 +120,7 @@ const Projects = () => {
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>Case Studies</p>
-        <h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>
+        <h2 className={`${styles.sectionHeadTextLight}`}>Web Projects.</h2>
       </motion.div>
 
       <div className="w-full flex">
