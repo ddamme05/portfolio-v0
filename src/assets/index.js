@@ -37,11 +37,20 @@ import coverhunt from './company/coverhunt.png';
 import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
+import grassroots from './company/Grassroots-Grocery.png';
+import metlife from './company/MetLife.png';
+import headstarter from './company/headstarter.png';
+import ttp from './company/TTP.png';
+
 
 import aurora from './projects/Aurora-Project.png';
 import simstock from './projects/SimStock-Exchange.png';
 
 export {
+  ttp,
+  headstarter,
+  metlife,
+  grassroots,
   simstock,
   aurora,
   bwmap,

@@ -20,6 +20,10 @@ import {
   dcc,
   kelhel,
   microverse,
+  ttp,
+  headstarter,
+  metlife,
+  grassroots,
   simstock,
 } from '../assets';
 
@@ -111,32 +115,32 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
+    title: 'Full Stack Developer Fellow',
+    company_name: 'Tech Talent Pipeline',
+    icon: ttp,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'Jun 2023 - Present',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
+    title: 'Technical Development Intern',
+    company_name: 'Grassroots Grocery',
+    icon: grassroots,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Mar 2024 - Apr 2024',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
+    title: 'Full Stack Engineer Intern',
+    company_name: 'MetLife',
+    icon: metlife,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'June 2024 - Present',
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
+    title: 'Headstarter AI Fellow',
+    company_name: 'Headstarter ai',
+    icon: headstarter,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'July 2024 - Present',
   },
 ];
 
