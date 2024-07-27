@@ -20,6 +20,7 @@ import {
   dcc,
   kelhel,
   microverse,
+  simstock,
 } from '../assets';
 
 export const navLinks = [
@@ -162,6 +163,29 @@ const projects = [
     repo: 'https://github.com/ddamme05/Aurora',
     demo: 'http://ec2-3-210-110-55.compute-1.amazonaws.com/',
     showDemo: true,
+  },
+  {
+    id: 'project-2',
+    name: 'SimStock Exchange',
+    description: 'Web-based stock market simulator with virtual currency.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'postgresql',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'flask',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: simstock,
+    repo: 'https://github.com/jawadrada/SimStock-Exchange',
+    demo: '',
+    showDemo: false,
   },
 ];
 
