@@ -25,6 +25,8 @@ import {
   metlife,
   grassroots,
   simstock,
+  blockchainPresentation,
+  blockchainPresentationLink,
 } from '../assets';
 
 export const navLinks = [
@@ -133,14 +135,14 @@ const experiences = [
     company_name: 'MetLife',
     icon: metlife,
     iconBg: '#333333',
-    date: 'June 2024 - Present',
+    date: 'June 2024 - August 2024',
   },
   {
     title: 'Headstarter AI Fellow',
     company_name: 'Headstarter ai',
     icon: headstarter,
     iconBg: '#333333',
-    date: 'July 2024 - Present',
+    date: 'July 2024 - September 2024',
   },
 ];
 
@@ -190,6 +192,16 @@ const projects = [
     repo: 'https://github.com/jawadrada/SimStock-Exchange',
     demo: '',
     showDemo: false,
+  },
+  {
+    id: 'project-3',
+    name: 'Presentation',
+    description: 'Introductory class presentation on the application of blockchain in voting systems.',
+    image: blockchainPresentation,
+    demo: '',
+    showDemo: false,
+    downloadLink : blockchainPresentationLink,
+    showDownload: true,
   },
 ];
 

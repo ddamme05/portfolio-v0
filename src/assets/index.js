@@ -45,6 +45,8 @@ import ttp from './company/TTP.png';
 
 import aurora from './projects/Aurora-Project.png';
 import simstock from './projects/SimStock-Exchange.png';
+import blockchainPresentation from './projects/blockchainPresentation.png'
+import blockchainPresentationLink from './presentations/CSC490_Blockchain.pptx'
 
 export {
   ttp,
@@ -53,6 +55,8 @@ export {
   grassroots,
   simstock,
   aurora,
+  blockchainPresentation,
+  blockchainPresentationLink,
   bwmap,
   java,
   flask,

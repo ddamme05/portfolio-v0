@@ -7,7 +7,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { resume } from '../assets';
+import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => (
@@ -91,11 +91,39 @@ const Experience = () => {
                 />
               </div>
             }>
-            <div className="text-center">
-              <p className="text-taupe text-[18px] sm:text-[22px] font-bold font-beckman">
-                CONTACT ME FOR RESUME
-              </p>
-            </div>
+            <button
+              className="live-demo flex justify-between 
+              sm:text-[18px] text-[14px] text-timberWolf 
+              font-bold font-beckman items-center py-5 pl-3 pr-3 
+              whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px] 
+              w-[125px] h-[46px] rounded-[10px] bg-jetLight 
+              sm:mt-[22px] mt-[16px] hover:bg-battleGray 
+              hover:text-eerieBlack transition duration-[0.2s] 
+              ease-in-out"
+              onClick={() =>
+                window.open(
+                  'https://drive.google.com/file/d/1z1mnTohLp1UJIUc2rg-u0sz_F_LuiYLl/view?usp=sharing',
+                  '_blank'
+                )
+              }
+              onMouseOver={() => {
+                document
+                  .querySelector('.download-btn')
+                  .setAttribute('src', downloadHover);
+              }}
+              onMouseOut={() => {
+                document
+                  .querySelector('.download-btn')
+                  .setAttribute('src', download);
+              }}>
+              MY RESUME
+              <img
+                src={download}
+                alt="download"
+                className="download-btn sm:w-[26px] sm:h-[26px] 
+                w-[23px] h-[23px] object-contain"
+              />
+            </button>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>

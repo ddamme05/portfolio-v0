@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
@@ -16,7 +16,9 @@ const ProjectCard = ({
   index,
   active,
   handleClick,
-  showDemo
+  showDemo,
+  downloadLink,
+  showDownload
 }) => {
   return (
     <motion.div
@@ -105,6 +107,19 @@ const ProjectCard = ({
                 />
                 LIVE DEMO
               </button>
+            )}
+            {showDownload && downloadLink && (
+              <a
+                href={downloadLink}
+                download
+                className="download-btn flex justify-center items-center
+                sm:text-[16px] text-[14px] text-timberWolf font-bold font-beckman 
+                py-5 px-4 rounded-[10px] glassmorphism mt-[16px] 
+                hover:bg-battleGray hover:text-eerieBlack transition duration-[0.2s] 
+                ease-in-out"
+              >
+                Download Presentation
+              </a>
             )}
           </div>
         </>
