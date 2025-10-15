@@ -8,14 +8,15 @@ import {
   java,
   expressjs,
   html,
-  css,
   reactjs,
   nodejs,
-  git,
-  figma,
   docker,
   postgresql,
+  springboot,
+  datadog,
+  aws,
   aurora,
+  filesystem,
   coverhunt,
   dcc,
   kelhel,
@@ -24,10 +25,12 @@ import {
   headstarter,
   metlife,
   grassroots,
+  google,
+  nyt,
   simstock,
   blockchainPresentation,
   blockchainPresentationLink,
-} from '../assets';
+} from '../../public';
 
 export const navLinks = [
   {
@@ -60,10 +63,6 @@ const technologies = [
   {
     name: 'HTML 5',
     icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
   },
   {
     name: 'Python',
@@ -102,16 +101,20 @@ const technologies = [
     icon: postman,
   },
   {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
     name: 'docker',
     icon: docker,
+  },
+  {
+    name: 'Spring Boot',
+    icon: springboot,
+  },
+  {
+    name: 'Datadog',
+    icon: datadog,
+  },
+  {
+    name: 'AWS',
+    icon: aws,
   },
 ];
 
@@ -144,11 +147,48 @@ const experiences = [
     iconBg: '#333333',
     date: 'July 2024 - September 2024',
   },
+  {
+    title: 'Software Engineering Mentee',
+    company_name: 'Google',
+    icon: google,
+    iconBg: '#333333',
+    date: 'Feb 2025 - Jun 2025',
+  },
+  {
+    title: 'Backend Engineering Intern',
+    company_name: 'The New York Times',
+    icon: nyt,
+    iconBg: '#333333',
+    date: 'Jun 2025 - Oct 2025',
+  },
 ];
 
 const projects = [
   {
     id: 'project-1',
+    name: 'FileStorage',
+    description: 'A secure HTTP/3-enabled file storage application with JWT authentication, AWS S3 backend, and Datadog monitoring.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'spring-boot',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'docker',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: filesystem,
+    repo: 'https://github.com/ddamme05/FileSystem',
+    demo: 'https://managefiles.duckdns.org/',
+    showDemo: true,
+  },
+  {
+    id: 'project-2',
     name: 'Aurora',
     description: 'An AI-powered quiz generator application.',
     tags: [
@@ -167,11 +207,11 @@ const projects = [
     ],
     image: aurora,
     repo: 'https://github.com/ddamme05/Aurora',
-    demo: 'http://ec2-3-210-110-55.compute-1.amazonaws.com/',
-    showDemo: true,
+    demo: '',
+    showDemo: false,
   },
   {
-    id: 'project-2',
+    id: 'project-3',
     name: 'SimStock Exchange',
     description: 'Web-based stock market simulator with virtual currency.',
     tags: [
@@ -194,7 +234,7 @@ const projects = [
     showDemo: false,
   },
   {
-    id: 'project-3',
+    id: 'project-4',
     name: 'Presentation',
     description: 'Introductory class presentation on the application of blockchain in voting systems.',
     image: blockchainPresentation,

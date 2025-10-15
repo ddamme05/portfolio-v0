@@ -2,7 +2,12 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { bwmap, worldmap } from '../assets';
+
+const bwmap = '/assets/backgrounds/bw-map.jpeg';
+const worldmap = '/assets/backgrounds/world-map.png';
+
+export { bwmap, worldmap };
+
 
 const Hero = () => {
   return (

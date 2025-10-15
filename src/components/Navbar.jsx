@@ -2,7 +2,12 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { close, menu} from '../assets';
+
+const close = '/assets/icons/close.png';
+const menu = '/assets/icons/menu.png';
+
+export { close, menu };
+
 
 const Navbar = () => {
   const [active, setActive] = useState('');
