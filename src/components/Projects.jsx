@@ -129,13 +129,17 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
-  const [active, setActive] = useState('project-2');
+  const [activeRow1, setActiveRow1] = useState('project-5');
+  const [activeRow2, setActiveRow2] = useState('project-2');
+
+  const row1 = projects.slice(0, 3);
+  const row2 = projects.slice(3);
 
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>Case Studies</p>
-        <h2 className={`${styles.sectionHeadTextLight}`}>Web Projects.</h2>
+        <h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -156,14 +160,26 @@ const Projects = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}>
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          {projects.map((project, index) => (
+        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[420px] gap-5">
+          {row1.map((project, index) => (
             <ProjectCard
               key={project.id}
               index={index}
               {...project}
-              active={active}
-              handleClick={setActive}
+              active={activeRow1}
+              handleClick={setActiveRow1}
+              showDemo={project.showDemo}
+            />
+          ))}
+        </div>
+        <div className="mt-[12px] flex lg:flex-row flex-col min-h-[420px] gap-5">
+          {row2.map((project, index) => (
+            <ProjectCard
+              key={project.id}
+              index={index + 3}
+              {...project}
+              active={activeRow2}
+              handleClick={setActiveRow2}
               showDemo={project.showDemo}
             />
           ))}

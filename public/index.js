@@ -51,8 +51,12 @@ const simstock = '/SimStock-Exchange.png';
 const blockchainPresentation = '/blockchainPresentation.png';
 const blockchainPresentationLink = '/CSC490_Blockchain.pptx';
 const filesystem = '/FileStorage.png';
+const vulntriage = '/VulnTriage.png';
+const slackmcpcve = '/SlackMCPCVE.png';
 
 export {
+  vulntriage,
+  slackmcpcve,
   ttp,
   headstarter,
   metlife,

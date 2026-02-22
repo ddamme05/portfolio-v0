@@ -30,6 +30,8 @@ import {
   simstock,
   blockchainPresentation,
   blockchainPresentationLink,
+  vulntriage,
+  slackmcpcve,
 } from '../../public';
 
 export const navLinks = [
@@ -164,6 +166,54 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    id: 'project-5',
+    name: 'VulnTriage',
+    description:
+      'Reachability-focused vulnerability triage for Python projects. Turns noisy scanner output into actionable findings.',
+    tags: [
+      {
+        name: 'python',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'cli',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'security',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: vulntriage,
+    repo: 'https://github.com/ddamme05/VulnTriage',
+    demo: '',
+    showDemo: false,
+  },
+  {
+    id: 'project-6',
+    name: 'CVE Research Bot',
+    description:
+      'Slack bot for researching CVEs with MCP-powered tool integration.',
+    tags: [
+      {
+        name: 'python',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'slack',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mcp',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: slackmcpcve,
+    repo: 'https://github.com/ddamme05/slack-mcp-cve',
+    demo: '',
+    showDemo: false,
+  },
   {
     id: 'project-1',
     name: 'FileStorage',
